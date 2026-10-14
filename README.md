@@ -1,4 +1,4 @@
-# 📝 Interactive To-Do List App
+# 📝 Interactive To-Do List
 
 Uma aplicação web interativa para gerenciamento de tarefas do dia a dia, focada em usabilidade, produtividade e manipulação dinâmica do DOM utilizando **JavaScript vanila**, **HTML5** e **CSS3**.
 
