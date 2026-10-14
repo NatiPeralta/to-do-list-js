@@ -30,7 +30,6 @@ Uma aplicação web interativa para gerenciamento de tarefas do dia a dia, focad
 ## 🔧 Como Executar o Projeto Localmente
 
 1. **Clone o repositório:**
-   ```bash
    git clone [https://github.com/NatiPeralta/to-do-list-js.git](https://github.com/NatiPeralta/to-do-list-js.git)
 
 2. **Acesse a pasta do projeto:**
