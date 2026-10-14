@@ -31,11 +31,11 @@ Uma aplicação web interativa para gerenciamento de tarefas do dia a dia, focad
 
 1. **Clone o repositório:**
    ```bash
-   git clone [https://github.com/NatiPeralta/todo-list-app.git](https://github.com/NatiPeralta/todo-list-app.git)
+   git clone [https://github.com/NatiPeralta/to-do-list-js.git](https://github.com/NatiPeralta/to-do-list-js.git)
 
 2. **Acesse a pasta do projeto:**
   ```bash
-  cd todo-list-app
+  cd to-do-list-js
   ```
 
 3. **Abra no navegador:**
