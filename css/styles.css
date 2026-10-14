@@ -1,0 +1,291 @@
+/* Geral */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Helvetica;
+  color: #313131;
+  caret-color: transparent;
+}
+
+body {
+  background-color: #F9C5C8;
+}
+
+button {
+  background-color: #fdfdfd;
+  border: 1px solid #F16C74;
+  border-radius: 5px;
+  padding: 0.3rem 0.6rem;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+}
+
+button:hover {
+  background-color: #F59597;
+}
+
+button:hover > i {
+  color: #fff;
+}
+
+button i {
+  pointer-events: none;
+  color: #F16C74;
+  font-weight: bold;
+}
+
+input,
+select {
+  padding: 0.25rem 0.5rem;
+}
+
+.hide {
+  display: none;
+}
+
+/* Todo Header */
+.todo-container {
+  justify-content: center;
+  align-items: center;
+  max-width: 450px;
+  margin: 10rem auto;
+  background-color: #fdfdfd;
+  padding: 1.5rem;
+  border-radius: 15px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.todo-container header {
+  text-align: center;
+  padding: 0 1rem 1rem;
+  border-bottom: 1px solid #ccc;
+}
+
+/* Todo Form */
+#todo-form,
+#edit-form {
+  padding: 1rem;
+  border-bottom: 1px solid #ccc;
+}
+
+#todo-form p,
+#edit-form p {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.form-control {
+  display: flex;
+}
+
+.form-control input {
+  margin-right: 0.3rem;
+  border: 1px solid #F16C74;
+  border-radius: 5px;
+}
+
+#cancel-edit-btn {
+  margin-top: 1rem;
+  color: #F16C74;
+  font-weight: bold;
+}
+
+#cancel-edit-btn:hover {
+  color: #fff;
+}
+
+/* Todo Toolbar */
+#toolbar {
+  padding: 1rem;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+}
+
+#toolbar h4 {
+  margin-bottom: 0.5rem;
+}
+
+#search {
+  border-right: 1px solid #ddd;
+  padding-right: 1rem;
+  margin-right: 1rem;
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+}
+
+#search form {
+  display: flex;
+}
+
+#search input {
+  width: 100%;
+  margin-right: 0.3rem;
+  border: 1px solid #F16C74;
+  border-radius: 5px;
+}
+
+#filter {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+}
+
+#filter select {
+  flex: 1;
+  border: 1px solid #F16C74;
+  border-radius: 5px;
+  background-color: #f8f8f8;
+  color: #F16C74;
+  font-weight: bold;
+}
+
+option {
+  color: #F16C74;
+}
+
+/* Todo List */
+.todo {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem 1rem;
+  border-bottom: 1px solid #ddd;
+  transition: 0.3s;
+}
+
+.todo h3 {
+  flex: 1;
+  font-size: 0.9rem;
+}
+
+.todo button {
+  margin-left: 0.4rem;
+}
+
+.done {
+  background: #F16C74;
+}
+
+.done h3 {
+  color: #fff;
+  text-decoration: line-through;
+  font-style: italic;
+}
+
+.done
+.finish-todo {
+  background-color: #c74049;
+}
+
+.done
+.finish-todo i {
+  color: #fff;
+}
+
+.done
+.finish-todo:hover {
+  background-color: #fff;
+}
+
+.done
+.finish-todo:hover > i {
+  color: #F16C74;
+}
+
+.done
+.edit-todo:hover {
+  background-color: #c74049;
+}
+
+.done
+.edit-todo:hover > i {
+  color: #fff;
+}
+
+.done
+.remove-todo:hover {
+  background-color: #c74049;
+}
+
+.done
+.remove-todo:hover > i {
+  color: #fff;
+}
+
+
+
+/* Drag and Drop */
+.todo {
+  cursor: grab;
+  user-select: none; /* Evita selecionar o texto ao arrastar */
+  transition: transform 0.1s ease;
+}
+
+/* Classe aplicada via JS ao item que está sendo movido */
+.todo.dragging {
+opacity: 0.4;
+background-color: #F9C5C8;
+}
+
+.todo:last-child {
+  margin-bottom: 0;
+}
+
+
+/* Mobile */
+
+@media (max-width: 480px) {
+
+  .todo-container {
+  max-width: 350px;
+  }
+}
+
+@media (max-width: 380px) {
+
+  .todo-container {
+  max-width: 300px;
+  margin: 5rem auto;
+  }
+
+  #toolbar {
+  flex-direction: column;
+  }
+
+  #search {
+  border-right: none;
+  }
+
+  #search input {
+  width: auto;
+  }
+
+  #filter {
+  padding-top: 10px;
+  margin-top: 2rem;
+  flex-direction: row;
+  }
+
+  #filter-select {
+  margin-left: 10px;
+  }
+
+}
+
+@media (max-width: 340px) {
+
+  .todo-container {
+  max-width: 280px;
+  }
+
+  button {
+  padding: 0.2rem 0.3rem;
+  font-size: 1rem;
+}
+}
