@@ -43,7 +43,7 @@ Uma aplicação web interativa para gerenciamento de tarefas do dia a dia, focad
 ## 👩‍💻 Autora
 
 Nati Peralta
-Desenvolvedora Front-end
+Desenvolvedora Full Stack
 
     GitHub: @NatiPeralta
 
