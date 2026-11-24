@@ -8,6 +8,7 @@ const cancelEditBtn = document.querySelector("#cancel-edit-btn");
 const searchInput = document.querySelector("#search-input");
 const eraseBtn = document.querySelector("#erase-button");
 const filterBtn = document.querySelector("#filter-select");
+const searchForm = document.querySelector("#search form");
 
 let oldInputValue;
 
@@ -73,19 +74,22 @@ const updateTodo = (text) => {
 
 const getSearchedTodos = (search) => {
   const todos = document.querySelectorAll(".todo");
+  const normalizedSearch = search.trim().toLowerCase();
 
   todos.forEach((todo) => {
     const todoTitle = todo.querySelector("h3").innerText.toLowerCase();
 
     todo.style.display = "flex";
 
-    console.log(todoTitle);
-
-    if (!todoTitle.includes(search)) {
+    if (!todoTitle.includes(normalizedSearch)) {
       todo.style.display = "none";
     }
   });
 };
+
+searchForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+})
 
 const filterTodos = (filterValue) => {
   const todos = document.querySelectorAll(".todo");

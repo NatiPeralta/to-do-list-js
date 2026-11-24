@@ -5,7 +5,6 @@
   box-sizing: border-box;
   font-family: Helvetica;
   color: #313131;
-  caret-color: transparent;
 }
 
 body {
@@ -39,9 +38,13 @@ button i {
   font-weight: bold;
 }
 
+/* Mantém o cursor da digitação visível nos campos editáveis */
 input,
-select {
+textarea,
+select,
+[contenteditable="true"] {
   padding: 0.25rem 0.5rem;
+  caret-color: auto;
 }
 
 .hide {
@@ -157,11 +160,13 @@ option {
   padding: 1rem 1rem;
   border-bottom: 1px solid #ddd;
   transition: 0.3s;
+  caret-color: transparent;
 }
 
 .todo h3 {
   flex: 1;
   font-size: 0.9rem;
+  caret-color: transparent;
 }
 
 .todo button {
