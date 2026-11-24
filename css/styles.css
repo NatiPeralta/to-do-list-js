@@ -291,12 +291,10 @@ background-color: #F9C5C8;
   }
 
   #search {
-  border-right: none;
+  width: 240px;
   }
 
   #filter {
-  padding-top: 10px;
-  margin-top: 2rem;
   flex-direction: row;
   }
 
@@ -316,4 +314,9 @@ background-color: #F9C5C8;
   padding: 0.2rem 0.3rem;
   font-size: 1rem;
 }
+
+  #search {
+  border-right: none;
+  width: 220px;
+  }
 }
