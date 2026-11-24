@@ -127,7 +127,6 @@ select,
 }
 
 #search input {
-  width: 100%;
   margin-right: 0.3rem;
   border: 1px solid #F16C74;
   border-radius: 5px;
@@ -250,6 +249,34 @@ background-color: #F9C5C8;
   .todo-container {
   max-width: 350px;
   }
+
+  .form-control input {
+    width: 100%;
+  }
+
+  #toolbar {
+  flex-direction: column;
+  }
+
+  #search {
+  border-right: none;
+  width: 285px;
+  padding-bottom: 18px;
+  }
+
+  #search input {
+  width: 100%;
+  }
+
+  #filter {
+  margin-top: 20px;
+  flex-direction: row;
+  width: 100%;
+  }
+
+  #filter-select {
+  margin-left: 10px;
+  }
 }
 
 @media (max-width: 380px) {
@@ -265,10 +292,6 @@ background-color: #F9C5C8;
 
   #search {
   border-right: none;
-  }
-
-  #search input {
-  width: auto;
   }
 
   #filter {
